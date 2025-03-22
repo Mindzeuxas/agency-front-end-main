@@ -1,0 +1,23 @@
+{
+  "name": "agency-front-end",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "dead-server --host=localhost --port=5051"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mindzeuxass/agency-front-end.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mindzeuxass/agency-front-end/issues"
+  },
+  "homepage": "https://github.com/Mindzeuxass/agency-front-end#readme",
+  "description": "",
+  "dependencies": {
+    "dead-server": "^1.0.9"
+  }
+}

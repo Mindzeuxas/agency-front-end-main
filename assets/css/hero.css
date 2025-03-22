@@ -1,0 +1,117 @@
+.hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-upper {
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #6D63D8;
+}
+
+.hero-upper__inner {
+    z-index: 1;
+    padding-bottom: 100px;
+    width: var(--inner-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-upper__content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero-upper__content > h6 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--header-font);
+}
+
+.hero-upper__content > h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--header-font);
+}
+
+.hero-upper__links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-upper__image {
+    position: relative;
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+
+.hero-upper__image > img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+.hero-upper__image::before,
+.hero-upper__image::after {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    background-image: url('../img/dots-light.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-upper__image::before {
+    bottom: 70px;
+    left: 120px;
+}
+
+.hero-upper__image::after {
+    top: 100px;
+    right: -30px;
+}
+
+.hero-upper > span {
+    position: absolute;
+    bottom: 0;
+    font-size: 35rem;
+    line-height: 0.8;
+    letter-spacing: 16px;
+    user-select: none;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.hero-lower {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #EF634C;
+}
+
+.hero-lower__content {
+    padding: 48px;
+    width: var(--inner-width);
+    height: 70vh;
+    transform: translateY(-20%);
+    background-color: var(--bg-light);
+    border-radius: 24px;
+}
