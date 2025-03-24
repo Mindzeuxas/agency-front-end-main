@@ -22,19 +22,19 @@
 }
 
 .section__content{
- width: 50%;
+    width: 50%;
 }
 
 .section__content > h6{
-font-size: 1.2rem;
-font-weight: 700;
-text-transform: uppercase;
-letter-spacing: 1px;
-color: var(--dark-font);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--dark-font);
 }
 
 .section__image{
-width: 50%;
+    width: 50%;
 }
 
 .section__image > img{
